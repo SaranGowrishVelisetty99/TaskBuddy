@@ -1,3 +1,90 @@
+body {
+  background: linear-gradient(to right, skyblue, #99f1eb);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 850px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header p {
+  color: gray;
+}
+
+/* Form */
+.todoForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todoForm input,
+.todoForm textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.todoForm textarea {
+  resize: none;
+}
+
+.todoForm button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Todo list */
+.todoList {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Todo card */
+.todo {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoContent h3 {
+  margin: 0;
+}
+
+.todoContent p {
+  margin-top: 4px;
+  color: gray;
+  font-size: 14px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: green;
+}
+
+.todo button {
+  margin-left: 6px;
+}
+
 .editBox {
   width: 100%;
   display: flex;
@@ -14,4 +101,48 @@
 
 .editBox textarea {
   resize: none;
+}
+
+.todo button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todo button:nth-child(1) {
+  background-color: #ff9800;
+  color: white;
+}
+
+.todo button:nth-child(1):hover {
+  background-color: #fb8c00;
+}
+
+.todo button:nth-child(2) {
+  background-color: #2196f3;
+  color: white;
+}
+
+.todo button:nth-child(2):hover {
+  background-color: #1e88e5;
+}
+
+.todo button:nth-child(3) {
+  background-color: #f44336;
+  color: white;
+}
+
+.todo button:nth-child(3):hover {
+  background-color: #e53935;
+}
+
+.todo button.completed {
+  background-color: #4caf50 !important;
+}
+
+.todo button.completed:hover {
+  background-color: #43a047 !important;
 }
