@@ -1,0 +1,17 @@
+.editBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.editBox input,
+.editBox textarea {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.editBox textarea {
+  resize: none;
+}
